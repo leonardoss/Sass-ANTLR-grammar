@@ -21,9 +21,8 @@ rule
 	;
 
 // cabeçalho da regra, pode ter vários seletores, inclusive separado por vírgula
-// TODO: implementar para aceitar com vírgula
 rulehead
-	:	selector
+	:	selector (COMMA selector)*
 	;
 
 // seletor
