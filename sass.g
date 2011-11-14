@@ -61,7 +61,7 @@ DOLLAR		: '$';
 AMP		: '&';
 CHARSET_ID     	: '@charset ';
 
-WORD		: ('a'..'z'|'A'..'Z'|'0'..'9'|'-')+ ;
+WORD		: ('a'..'z'|'A'..'Z'|'0'..'9'|'-'|'#')+ ;
 STRING  	: '\'' ( ~('\n'|'\r'|'\f'|'\'') )* '\'';
 VARIABLE	: DOLLAR WORD;
 
